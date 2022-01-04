@@ -1,3 +1,25 @@
+//Copyright 2022 Anton Pavlyukevich.
+
+//Calendar is free software: you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation, either version 3 of the License, or
+//(at your option) any later version.
+//
+//Calendar is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with calendar.  If not, see <https://www.gnu.org/licenses/>.
+
+//
+// Created by pavlyukevich.anton@gmail.com on 04.01.22
+//
+
+// built and tested on Darwin Kernel Version 18.7.0: Tue Jun 22 19:37:08 PDT 2021; root:xnu-4903.278.70~1/RELEASE_X86_64 x86_64
+
+
 #include <iostream>
 
 #define ODD 31
