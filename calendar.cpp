@@ -70,8 +70,10 @@ static void output_conditions(unsigned int &i, unsigned int &current_month)
 {
 	time_t now = time(0);
 	tm *ltm = localtime(&now);
-
-	if (i < (unsigned int)ltm->tm_mday && current_month == (unsigned int)ltm->tm_mon)
+	
+	if (i <= 31 && current_month < (unsigned int)ltm->tm_mon)
+		std::cout << DARK_GREY << STRIKETHROUGH << i << " " << DEFAULT;
+	else if (i < (unsigned int)ltm->tm_mday && current_month == (unsigned int)ltm->tm_mon)
 		std::cout << DARK_GREY << STRIKETHROUGH << i << " " << DEFAULT;
 	else if (i == (unsigned int)ltm->tm_mday && current_month == (unsigned int)ltm->tm_mon)
 		std::cout << B_RED << i << " " << DEFAULT;
