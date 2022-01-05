@@ -121,17 +121,17 @@ int main(void)
 	std::string mon[12];
 	time_t now = time(0);
 	tm *ltm = localtime(&now);
-	unsigned int year = 1900 + ltm->tm_year;
+	unsigned int current_year = 1900 + ltm->tm_year;
 	unsigned int current_month = 0;
 
 	initialize_months(mon);
-	std::cout << year << std::endl;
+	std::cout << current_year << std::endl;
 	while (current_month < MONTHS)
 	{
 		output_months(mon, current_month);
 		if (current_month == Feb)
 		{
-			if (year % 4 == 0)
+			if (current_year % 4 == 0)
 				output_days(current_month, LEAP);
 			else  
 				output_days(current_month, NORMAL);
