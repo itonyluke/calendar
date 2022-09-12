@@ -1,7 +1,9 @@
 ### this program outputs calendar
 
 #### install:
-`git clone https://github.com/itonyluke/calendar calendar`
+```
+git clone https://github.com/itonyluke/calendar calendar
+```
 
 #### compile:
 `clang++ calendar.cpp`
